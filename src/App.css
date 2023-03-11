@@ -1,38 +1,120 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Montserrat:wght@300;400;500;600&display=swap');
+
+
+*{
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    /* font-family: 'Inter', sans-serif; */
+    font-family: 'Montserrat', sans-serif;
+    transition: .3s ease;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* colors and styles */
+
+:root{
+    --primaryColor:hsl(330, 12%, 97%);
+    --hoverColor:hsl(94, 59%, 35%);
+    --paleGreen: hsl(96, 75%, 89%);
+    --whiteColor:hsl(0, 0%, 100%);
+    --greyColor:rgb(190, 190, 190);
+    /* --greyText:rgb(190, 190, 190); */
+    --blackColor:hsl(0,0%, 18%);
+    --textColor:hsl(249, 1%, 48%);
+    --inputColor:hsl(330, 12%, 97%);
+    --bgColor: hsl(220, 10%, 94%);
+    
+
+
+    /* font and typography */
+    --biggestFontSize:2.5rem;
+    --h1FontSize:1.5rem;
+    --h2FontSize:1.25rem;
+    --h3FontSize:1rem;
+    --normalFontSize: .938rem;
+    --smallFontSize: .813rem;
+    --smallestFontSize: .75rem;
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+html{
+    font-size: 90%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+a{
+    text-decoration: none;
 }
 
-.App-link {
-  color: #61dafb;
+li{
+    list-style: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.icon{
+    font-size: var(--h2FontSize);
 }
+
+img{
+    width: 100%;
+    height: auto;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+ 
+}
+
+.grid{
+    display: grid;
+    align-items: center;
+    gap: 2rem;
+}
+
+.btn{
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px var(--inputColor);
+    padding: .8rem 1rem;
+    color: var(--textColor);
+}
+
+.btn .icon{
+    margin-left: .5rem;
+
+}
+
+.btn:hover{
+    background: var(--paleGreen);
+    color: var(--primaryColor);
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    padding: 1rem;
+}
+
+.container{
+    position: relative;
+    width: 95vw;
+    height: 95vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background:var(--bgColor);
+    overflow: hidden;
+    border-radius: 1rem;
+    box-shadow: 2px 2px 8px var(--greyColor);
+}
+
+/* .Avatar{
+    vertical-align: middle;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+} */

@@ -1,0 +1,49 @@
+:root{
+    --primaryColor:hsl(330, 12%, 97%);
+    --hoverColor:hsl(94, 59%, 35%);
+    --paleGreen: hsl(96, 75%, 89%);
+    --whiteColor:hsl(0, 0%, 100%);
+    --greyColor:rgb(190, 190, 190);
+    /* --greyText:rgb(190, 190, 190); */
+    --blackColor:hsl(0,0%, 18%);
+    --textColor:hsl(249, 1%, 48%);
+    --inputColor:hsl(330, 12%, 97%);
+    --bgColor: hsl(220, 10%, 94%);
+    
+
+
+    /* font and typography */
+    --biggestFontSize:2.5rem;
+    --h1FontSize:1.5rem;
+    --h2FontSize:1.25rem;
+    --h3FontSize:1rem;
+    --normalFontSize: .938rem;
+    --smallFontSize: .813rem;
+    --smallestFontSize: .75rem;
+
+}
+
+.sideBar{
+    background: var(--whiteColor);
+    box-shadow: 1px 0px 4px var(--greyColor);
+    width: 18%;
+    height: 100%;
+    gap:3rem;
+    overflow: auto;
+
+
+    .logoDiv{
+        padding: 1.5rem 1.5rem 0;
+        cursor: pointer;
+        
+    }
+
+    img{
+        max-width: 20px;
+        margin-right: .5rem;
+        background: var(--inputColor);
+        border-radius: 2px;
+        padding: .2rem;
+    }
+
+}
